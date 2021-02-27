@@ -1,0 +1,16 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<form>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputEmail4">Email</label>
+        <input name="Email" type="email" class="form-control" id="inputEmail4" placeholder="Email">
+      </div>
+    </div>
+
+    <button  type="submit" class="btn btn-primary">login</button>
+  </form>
+  <ul>
+    <li *ngFor="let email of Email">
+      {{email}}
+    </li>
+  </ul>

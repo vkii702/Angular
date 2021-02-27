@@ -1,0 +1,11 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<form>
+    <div class="form-group">
+    <label for="Email">Email</label>
+    <input formControlName="email" type="email" class="form-control" required pattern="skilliza.com"/>
+        </div>
+        <div class="alert alert-danger"> Email pattern doesnt match.
+        </div>
+        <button (click)="validatelogin()" class="btn btn-primary">Login</button>
+        <button (click)="Register()" class="btn btn-secondary">Register</button>
+</form>
